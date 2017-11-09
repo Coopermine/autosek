@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoSek.Views.Login" BackgroundColor="White">
+   
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+
+            <Image Source="login.png"
+    HeightRequest="300"
+    HorizontalOptions="CenterAndExpand"
+    Aspect="AspectFill"
+    WidthRequest="300"
+    Grid.RowSpan="3"
+    />
+
+            <Label Text="Usuario" />
+            <Entry Text="{Binding Nome}" x:Name="usernameEntry" />
+
+            <Label Text="Senha" />
+            <Entry Text="{Binding Senha}" IsPassword="true" x:Name="passwordEntry" />
+
+            <Button Text="Login"  Command="{Binding LogarCommand}"/>
+
+
+            <Label Text="" />
+            <Label Text="{Binding Mensagem}" TextColor="Red" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

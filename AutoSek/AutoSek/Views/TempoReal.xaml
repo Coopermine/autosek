@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoSek.Views.TempoReal"
+             xmlns:local="clr-namespace:AutoSek;assembly=AutoSek"
+             xmlns:behaviours="clr-namespace:AutoSek.Behaviours;assembly=AutoSek" >
+   
+        
+
+
+
+        <!--<maps:Map x:Name="LocationMap" MapType="Street" VerticalOptions="FillAndExpand">
+            <maps:Map.Behaviors>
+                <behaviours:BindableMapBehavior ItemsSource="{Binding Locations}" />
+            </maps:Map.Behaviors>
+        </maps:Map>-->
+
+
+        <ContentPage.Content>
+            <local:CustomMap x:Name="LocationMap" MapType="Street" />
+        </ContentPage.Content>
+
+
+    
+</ContentPage>
