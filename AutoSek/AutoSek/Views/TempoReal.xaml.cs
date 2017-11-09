@@ -28,18 +28,18 @@ namespace AutoSek.Views
         public TempoReal ()
 		{
 
-          //  _viewModel = new TempoRealViewModel();
+          //  _viewModel = new TempoRealViewModel(); 
 
             InitializeComponent ();
             //  BindingContext = _viewModel;
 
-            //     LocationMap.RouteCoordinates.Add(new Position(37.797534, -122.401827));
+         
 
-
+            // COLOQUEI DIRETO NA VIEW PARA TESTAR MESMO. POR ISSO TIREI DO VIEWMODEL E BINDING 
 
           
 
-          Task T = Task.Run(() => BuscaCoordenadas(7, 500));
+          Task T = Task.Run(() => BuscaCoordenadas(7, 500)); // BUSCCA INFORMAÇÕES DA API
           T.Wait();
 
 
